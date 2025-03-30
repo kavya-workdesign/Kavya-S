@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and base styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center content with a max width */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header with cover image and profile picture */
+        header {
+            background-image: url('cover.jpg'); /* Replace with your cover image */
+            background-size: cover;
+            background-position: center;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* Circular profile picture */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover; /* Ensures image fits within circle */
+        }
+
+        /* Headings with blue accents and readability */
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #007BFF;
+        }
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Enhances readability over cover image */
+        }
+
+        /* Section spacing */
+        section {
+            padding: 20px 0;
+        }
+
+        /* Project cards with rounded corners */
+        .project {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px; /* Rounded rectangle previews */
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px; /* Slight rounding for images */
+        }
+
+        /* Link styles */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        /* Footer with colored background */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e9ecef; /* Light gray colored block */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with cover image and profile picture -->
+        <header>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic"> <!-- Replace with your photo -->
+            <h1>My Portfolio</h1>
+        </header>
+
+        <!-- About Me section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I’m [Your Name]. I’m passionate about web development and design.</p>
+        </section>
+
+        <!-- Projects section with rounded previews -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1"> <!-- Replace with your project image -->
+                <h3>Project 1</h3>
+                <p>Description of project 1 goes here.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2"> <!-- Replace with your project image -->
+                <h3>Project 2</h3>
+                <p>Description of project 2 goes here.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>Connect: 
+                <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>, 
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            </p>
+        </section>
+
+        <!-- Footer with colored background -->
+        <footer>
+            <p>© 2023 [Your Name]</p>
+        </footer>
+    </div>
+</body>
+</html>
